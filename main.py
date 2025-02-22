@@ -9,7 +9,6 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 from google import genai
 
-# Load environment variables
 load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -19,10 +18,8 @@ if not MONGO_URI:
 if not GEMINI_API_KEY:
     raise Exception("GEMINI_API_KEY not found in environment variables")
 
-# Initialize Google Gemini Client
 gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 
-# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -30,12 +27,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger("ai_voice_assistant")
 
-# Initialize MongoDB Client
 client = MongoClient(MONGO_URI)
 db = client['voice-assistant']
 collection = db['assistant']
 
-# Initialize FastAPI app
 app = FastAPI(
     title="Simple AI Voice Assistant API",
     description="API for processing text input, recognizing intents, and storing interactions",
