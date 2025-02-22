@@ -2,4 +2,4 @@ fastapi
 pymongo
 dnspython
 python-dotenv
-google-genai
+uvicorn
