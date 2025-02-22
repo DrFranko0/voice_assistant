@@ -43,10 +43,5 @@ Open your browser and go to:
 
 ### Run the Docker Container
 ```bash
-docker run -d -p 8000:8000 --name ai-voice-assistant-container ai-voice-assistant
+docker run -d -p 8000:8000 drfrank0671/ai-voice-assistant:latest
 ```
-
-### Access API
-Visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser.
-
----
