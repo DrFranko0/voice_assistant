@@ -15,6 +15,11 @@ Built with **FastAPI**.
 
 ---
 
+# Video Explaining the Project:
+
+https://drive.google.com/file/d/1RboCXn6G-IMVe21hFybvfqGVLDWHrk1x/view?usp=sharing
+
+
 ##  Setup & Installation
 
 ### 1️⃣ Clone the Repository
